@@ -33,20 +33,4 @@
     });
   });
 
-  // Highlight current section in nav
-  var links = {};
-  nav.querySelectorAll('a').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
-  if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) {
-        if (en.isIntersecting && links[en.target.id]) {
-          Object.keys(links).forEach(function (k) { links[k].removeAttribute('aria-current'); });
-          links[en.target.id].setAttribute('aria-current', 'true');
-        }
-      });
-    }, { rootMargin: '-40% 0px -55% 0px' });
-    Object.keys(links).forEach(function (id) {
-      var s = document.getElementById(id); if (s) io.observe(s);
-    });
-  }
 })();

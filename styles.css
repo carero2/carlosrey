@@ -172,3 +172,13 @@ h1 { font: 600 var(--text-h1)/1.2 var(--font-head); max-width: 20ch; letter-spac
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/* Multi-page additions */
+.page-head { padding-block: var(--s6) var(--s4); }
+.page-head h1 { max-width: none; }
+.page-head + .section { border-top: 0; padding-top: var(--s4); }
+.stack > :first-child { margin-top: 0; }
+.nav a[aria-current="page"] { color: var(--accent); background: var(--accent-soft); }
+.stack .prose { margin-bottom: var(--s2); }
+.stack .more { margin-top: var(--s6); }
+.stack .more .group-title:first-child { margin-top: 0; }

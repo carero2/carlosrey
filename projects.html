@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects · Carlos Rey</title>
+  <meta name="description" content="Data science projects by Carlos Rey.">
+  <meta name="theme-color" content="#f7f5f0">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="bar">
+      <a class="brand" href="index.html" aria-label="Carlos Rey, home">Carlos Rey</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" class="nav" aria-label="Primary"><a href="index.html">About</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="projects.html" aria-current="page">Projects</a><a href="assets/CarlosReyRomero_CV.pdf" target="_blank" rel="noopener">CV</a></nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head" id="top"><div class="page"><h1>Projects</h1><p class="lead">Data science projects, from research code to small tools.</p></div></section>
+    <section class="section"><div class="page stack">
+          <p class="prose">Each project will get its own page with code, data and an interactive demo when it makes sense.</p>
+          <div class="filters" role="group" aria-label="Filter projects by topic">
+            <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="chip" type="button" data-filter="nlp" aria-pressed="false">NLP &amp; LLMs</button>
+            <button class="chip" type="button" data-filter="modelling" aria-pressed="false">Behavioral modelling</button>
+            <button class="chip" type="button" data-filter="tools" aria-pressed="false">Tools</button>
+          </div>
+          <ul class="grid" id="project-grid">
+            <li class="card project" data-tags="nlp modelling">
+              <p class="status">In progress</p>
+              <h3>Semantics of loss</h3>
+              <p>Using NLP and LLMs to explore how loss-related concepts are represented in language.</p>
+              <p class="row-tags"><span class="tag">Python</span><span class="tag">NLP</span><span class="tag">LLMs</span></p>
+              <p class="project-link">Page coming soon</p>
+            </li>
+            <li class="card project" data-tags="modelling">
+              <p class="status">In progress</p>
+              <h3>Losses and reflection</h3>
+              <p>Analysis pipeline for behavioral experiments on reflection time and quality with linear mixed models.</p>
+              <p class="row-tags"><span class="tag">R / Python</span><span class="tag">Mixed models</span></p>
+              <p class="project-link">Page coming soon</p>
+            </li>
+            <li class="card project" data-tags="nlp tools">
+              <p class="status">In progress</p>
+              <h3>Socratic chatbot</h3>
+              <p>An LLM-based conversational tutor to study learning and trust in human–AI interaction.</p>
+              <p class="row-tags"><span class="tag">LLMs</span><span class="tag">Web app</span></p>
+              <p class="project-link">Page coming soon</p>
+            </li>
+          </ul>
+          <p class="filter-empty" id="filter-empty" hidden>No projects in this topic yet.</p>
+        </div></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page foot">
+      <p>© <span id="year">2026</span> Carlos Rey · <a href="mailto:carlos.rey2@esade.edu">carlos.rey2@esade.edu</a> · <a href="https://orcid.org/0000-0003-2650-3880">ORCID</a> · <a href="https://www.linkedin.com/in/carlosreyr">LinkedIn</a></p>
+      <p><a href="#top">Back to top</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
