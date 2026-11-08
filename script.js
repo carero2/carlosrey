@@ -3,6 +3,24 @@
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
 
+  // Theme toggle
+  var root = document.documentElement;
+  var tbtn = document.querySelector('.theme-btn');
+  function label() {
+    var dark = root.getAttribute('data-theme') === 'dark';
+    tbtn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    tbtn.title = tbtn.getAttribute('aria-label');
+  }
+  if (tbtn) {
+    label();
+    tbtn.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      label();
+    });
+  }
+
   // Mobile menu
   var btn = document.querySelector('.menu-btn');
   var nav = document.getElementById('nav');

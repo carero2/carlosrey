@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+  <script>(function(){var t;try{t=localStorage.getItem('theme')}catch(e){}if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)})();</script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,6 +18,7 @@
   <header class="site-header">
     <div class="bar">
       <a class="brand" href="index.html" aria-label="Carlos Rey, home">Carlos Rey</a>
+      <button class="theme-btn" type="button" aria-label="Switch to dark mode"><svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
       <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
       <nav id="nav" class="nav" aria-label="Primary"><a href="index.html">About</a><a href="projects.html" aria-current="page">Projects</a><a href="assets/CarlosReyRomero_CV.pdf" target="_blank" rel="noopener">CV</a></nav>
     </div>
@@ -61,7 +63,7 @@
 
   <footer class="site-footer">
     <div class="page foot">
-      <p>© <span id="year">2026</span> Carlos Rey · <a href="mailto:carlos.rey2@esade.edu">carlos.rey2@esade.edu</a> · <a href="https://orcid.org/0000-0003-2650-3880">ORCID</a> · <a href="https://www.linkedin.com/in/carlosreyr">LinkedIn</a></p>
+      <p>© <span id="year">2026</span> Carlos Rey · <a href="https://orcid.org/0000-0003-2650-3880" target="_blank" rel="noopener">ORCID</a> · <a href="https://www.linkedin.com/in/carlosreyr" target="_blank" rel="noopener">LinkedIn</a></p>
       <p><a href="#top">Back to top</a></p>
     </div>
   </footer>

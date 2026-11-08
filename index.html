@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+  <script>(function(){var t;try{t=localStorage.getItem('theme')}catch(e){}if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)})();</script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,6 +18,7 @@
   <header class="site-header">
     <div class="bar">
       <a class="brand" href="index.html" aria-label="Carlos Rey, home">Carlos Rey</a>
+      <button class="theme-btn" type="button" aria-label="Switch to dark mode"><svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
       <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
       <nav id="nav" class="nav" aria-label="Primary"><a href="index.html" aria-current="page">About</a><a href="projects.html">Projects</a><a href="assets/CarlosReyRomero_CV.pdf" target="_blank" rel="noopener">CV</a></nav>
     </div>
@@ -32,9 +34,8 @@
           <p class="lead">I am a postdoctoral researcher in the Marketing Department at ESADE, funded by a Ramón Areces Postdoctoral Fellowship. I study how people interact with large language models (learning, user experience and trust) and how they make decisions under losses, combining behavioral experiments, cognitive modelling, NLP and machine learning.</p>
           <p class="lead">I hold a PhD in Management (Decision Sciences) from the Universitat de les Illes Balears and an MSc in Data Science.</p>
           <div class="actions">
-            <a class="btn btn-primary" href="mailto:carlos.rey2@esade.edu">Get in touch</a>
-            <a class="btn" href="https://orcid.org/0000-0003-2650-3880">ORCID</a>
-            <a class="btn" href="https://www.linkedin.com/in/carlosreyr">LinkedIn</a>
+            <a class="btn" href="https://orcid.org/0000-0003-2650-3880" target="_blank" rel="noopener">ORCID</a>
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/carlosreyr" target="_blank" rel="noopener">LinkedIn</a>
           </div>
         </div>
       </div>
@@ -43,46 +44,50 @@
     <section class="section" id="publications" aria-labelledby="pubs-h">
       <div class="page stack">
         <h2 id="pubs-h" class="section-title">Publications</h2>
-          <h3 class="group-title">Working papers</h3>
-          <ul class="list-frame">
+        <h3 class="group-title">Preprints</h3>
+        <ul class="list-frame">
             <li class="row">
-              <p class="row-title">Mapping the gap between laboratory and real-world losses</p>
-              <p class="row-meta">with Dirk Wulff and Tomás Lejarraga</p>
-              <p class="row-desc">How people perceive real-world losses, and whether laboratory findings on loss aversion generalize beyond monetary tasks, combining experiments with LLM-based literature mapping.</p>
-              <p class="row-tags"><span class="tag">Working paper</span><span class="tag">LLMs</span><span class="tag">Loss aversion</span></p>
+              <p class="row-title"><a href="https://doi.org/10.31234/osf.io/q5emw_v2" target="_blank" rel="noopener">Prolonged mental effort in losses</a></p>
+              <p class="row-meta"><span class="me">Carlos Rey</span>, Tomás Lejarraga, Antoni Rubí-Barceló</p>
+              <p class="row-venue"><em>PsyArXiv</em> · 2025</p>
+            </li>
+        </ul>
+        <h3 class="group-title">Journal articles</h3>
+        <ul class="list-frame">
+            <li class="row">
+              <p class="row-title"><a href="https://doi.org/10.1037/aca0000601" target="_blank" rel="noopener">Preference for curvature in paintings extends to museum context</a></p>
+              <p class="row-meta">Enric Munar, Erick G. Chuquichambi, Nicole Ruta, Alejandro Dorado, <span class="me">Carlos Rey</span>, Robert Pepperell</p>
+              <p class="row-venue"><em>Psychology of Aesthetics, Creativity, and the Arts</em> · 2025</p>
             </li>
             <li class="row">
-              <p class="row-title">Do losses promote more reflection than equivalent gains?</p>
-              <p class="row-meta">with Antoni Rubí-Barceló and Tomás Lejarraga</p>
-              <p class="row-desc">Two behavioral experiments and linear mixed models show that losses increase reflection time but not reflection quality.</p>
-              <p class="row-tags"><span class="tag">Working paper</span><span class="tag">Experiments</span><span class="tag">Mixed models</span></p>
+              <p class="row-title"><a href="https://doi.org/10.1037/aca0000395" target="_blank" rel="noopener">Preference for paintings is also affected by curvature</a></p>
+              <p class="row-meta">Nicole Ruta, Javier Vañó, Robert Pepperell, Guido B. Corradi, Erick G. Chuquichambi, <span class="me">Carlos Rey</span>, Enric Munar</p>
+              <p class="row-venue"><em>Psychology of Aesthetics, Creativity, and the Arts</em> · 2023</p>
             </li>
             <li class="row">
-              <p class="row-title">The role of losses in rapid value-based choice</p>
-              <p class="row-meta">with Sebastian Horn, Thorsten Pachur and Tomás Lejarraga</p>
-              <p class="row-desc">Drift-diffusion modelling to test whether losses lower drift rates or widen decision boundaries.</p>
-              <p class="row-tags"><span class="tag">Working paper</span><span class="tag">Drift-diffusion</span></p>
+              <p class="row-title"><a href="https://doi.org/10.7717/peerj.11772" target="_blank" rel="noopener">Shape familiarity modulates preference for curvature in drawings of common-use objects</a></p>
+              <p class="row-meta">Erick G. Chuquichambi, Letizia Palumbo, <span class="me">Carlos Rey</span>, Enric Munar</p>
+              <p class="row-venue"><em>PeerJ</em> · 2021</p>
             </li>
             <li class="row">
-              <p class="row-title">Loss aversion: distribution, lifespan trajectory and predictive validity</p>
-              <p class="row-meta">with Ralph Hertwig and Tomás Lejarraga</p>
-              <p class="row-desc">German Socio-Economic Panel data to estimate the prevalence of loss aversion and its links with demographics, household income and investment decisions.</p>
-              <p class="row-tags"><span class="tag">Working paper</span><span class="tag">Panel data</span></p>
+              <p class="row-title"><a href="https://doi.org/10.1177/0301006620957472" target="_blank" rel="noopener">Circles are detected faster than downward-pointing triangles in a speeded response task</a></p>
+              <p class="row-meta">Erick G. Chuquichambi, <span class="me">Carlos Rey</span>, Rosana Llames, Juan T. Escudero, Alejandro Dorado, Enric Munar</p>
+              <p class="row-venue"><em>Perception</em> · 2020</p>
             </li>
-          </ul>
-
-          <h3 class="group-title">Peer-reviewed articles</h3>
-          <div class="list-frame empty">
-            <p class="empty-title">No published articles yet</p>
-            <p class="empty-desc">Preprints and journal versions will be listed here as they become available.</p>
-          </div>
-        </div>
+            <li class="row">
+              <p class="row-title"><a href="https://doi.org/10.1016/j.actpsy.2019.05.012" target="_blank" rel="noopener">Aesthetic sensitivity to curvature in real objects and abstract designs</a></p>
+              <p class="row-meta">Guido Corradi, Marcos Belman, Tommaso Currò, Erick G. Chuquichambi, <span class="me">Carlos Rey</span>, Marcos Nadal</p>
+              <p class="row-venue"><em>Acta Psychologica</em> · 2019</p>
+            </li>
+        </ul>
+        <p class="source-note">Source: <a href="https://orcid.org/0000-0003-2650-3880" target="_blank" rel="noopener">ORCID</a></p>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="page foot">
-      <p>© <span id="year">2026</span> Carlos Rey · <a href="mailto:carlos.rey2@esade.edu">carlos.rey2@esade.edu</a> · <a href="https://orcid.org/0000-0003-2650-3880">ORCID</a> · <a href="https://www.linkedin.com/in/carlosreyr">LinkedIn</a></p>
+      <p>© <span id="year">2026</span> Carlos Rey · <a href="https://orcid.org/0000-0003-2650-3880" target="_blank" rel="noopener">ORCID</a> · <a href="https://www.linkedin.com/in/carlosreyr" target="_blank" rel="noopener">LinkedIn</a></p>
       <p><a href="#top">Back to top</a></p>
     </div>
   </footer>
