@@ -182,3 +182,11 @@ h1 { font: 600 var(--text-h1)/1.2 var(--font-head); max-width: 20ch; letter-spac
 .stack .prose { margin-bottom: var(--s2); }
 .stack .more { margin-top: var(--s6); }
 .stack .more .group-title:first-child { margin-top: 0; }
+
+/* About */
+.about-grid { display: grid; gap: var(--s4); align-items: start; }
+.photo { width: 160px; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius); border: 1px solid var(--border); background: var(--surface); }
+.about-grid .lead + .lead { margin-top: var(--s2); }
+.about-grid h1 { max-width: none; }
+.section-title { font: 600 var(--text-h2)/1.2 var(--font-head); margin-bottom: var(--s4); }
+@media (min-width: 768px) { .about-grid { grid-template-columns: 240px 1fr; gap: var(--s6); } .photo { width: 240px; } }
