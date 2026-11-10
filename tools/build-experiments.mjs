@@ -8,8 +8,8 @@ const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..')
 
 // id (also the URL folder) -> source file and page title
 const STUDIES = [
-  { id: 'loss-perception', src: 'loss-perception.json', title: 'Loss perception · Experiment' },
-  { id: 'loss-perception-study3', src: 'loss-perception-study3.json', title: 'Loss perception · Study 3' },
+  { id: 'loss-attention1B', src: 'loss-attention1B.json', title: 'Loss attention 1B' },
+  { id: 'loss-attention2', src: 'loss-attention2.json', title: 'Loss attention 2' },
 ]
 
 for (const s of STUDIES) {

@@ -1,4 +1,4 @@
-// Generated from loss-perception.json by tools/labjs-export.mjs — do not edit by hand.
+// Generated from loss-attention1B.json by tools/labjs-export.mjs — do not edit by hand.
 // Define study
 const study = lab.util.fromObject({
   "title": "root",
@@ -2063,7 +2063,7 @@ this.state.gain_color = ["blue", "yellow"].splice(index, 1).pop();
 })
 
 // Data handling (disabled unless configured in experiments/shared/datasink.js)
-if (window.DataSink) window.DataSink.attach(study, { studyId: "loss-perception" })
+if (window.DataSink) window.DataSink.attach(study, { studyId: "loss-attention1B" })
 
 // Let's go!
 study.run()

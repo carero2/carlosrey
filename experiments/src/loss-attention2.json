@@ -2330,7 +2330,7 @@
         {
           "title": "Define color for losses",
           "message": "before:prepare",
-          "code": "// [\"blue\", \"orange\", \"yellow\"]\r\n// [\"blue\", \"yellow\", \"orange\"]\r\n\r\n// [\"orange\", \"yellow\", \"blue\"]\r\n// [\"orange\", \"blue\", \"yellow\"]\r\n\r\n// [\"yellow\", \"blue\", \"orange\"]\r\n// [\"yellow\", \"orange\", \"blue\"]\r\n\r\ncolors = this.random.shuffle([\"yellow\", \"orange\", \"blue\"])\r\n\r\nthis.state.gain_color = colors[0]\r\nthis.state.loss_color = colors[1]\r\nthis.state.neutral_color = colors[2]\r\n\r\nthis.state.upper_gain_color = colors[0].slice(0,1).toUpperCase().concat(colors[0].slice(1))\r\nthis.state.upper_loss_color = colors[1].slice(0,1).toUpperCase().concat(colors[1].slice(1))\r\nthis.state.upper_neutral_color = colors[2].slice(0,1).toUpperCase().concat(colors[2].slice(1))\r\n\r\nthis.state.n_trials = 24 //24\r\ntrials_practice = 26 //6\r\ntrials_mixed_prc = 12 //12\r\n\r\nget_rest_of_1 = function(number) {\r\n  l = String(number).length\r\n  return (1 - number).toFixed(l-2);\r\n}\r\n"
+          "code": "// [\"blue\", \"orange\", \"yellow\"]\r\n// [\"blue\", \"yellow\", \"orange\"]\r\n\r\n// [\"orange\", \"yellow\", \"blue\"]\r\n// [\"orange\", \"blue\", \"yellow\"]\r\n\r\n// [\"yellow\", \"blue\", \"orange\"]\r\n// [\"yellow\", \"orange\", \"blue\"]\r\n\r\ncolors = this.random.shuffle([\"yellow\", \"orange\", \"blue\"])\r\n\r\nthis.state.gain_color = colors[0]\r\nthis.state.loss_color = colors[1]\r\nthis.state.neutral_color = colors[2]\r\n\r\nthis.state.upper_gain_color = colors[0].slice(0,1).toUpperCase().concat(colors[0].slice(1))\r\nthis.state.upper_loss_color = colors[1].slice(0,1).toUpperCase().concat(colors[1].slice(1))\r\nthis.state.upper_neutral_color = colors[2].slice(0,1).toUpperCase().concat(colors[2].slice(1))\r\n\r\nthis.state.n_trials = 24 //24\r\ntrials_practice = 6 // web demo (original: 26)\r\ntrials_mixed_prc = 6 // web demo (original: 12)\r\n\r\nget_rest_of_1 = function(number) {\r\n  l = String(number).length\r\n  return (1 - number).toFixed(l-2);\r\n}\r\n"
         }
       ],
       "title": "welcome",
@@ -12934,7 +12934,7 @@
       },
       "sample": {
         "mode": "draw",
-        "n": "12"
+        "n": "${trials_mixed_prc}"
       },
       "files": [],
       "responses": [

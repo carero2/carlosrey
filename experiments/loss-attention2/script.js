@@ -1,4 +1,4 @@
-// Generated from loss-perception-study3.json by tools/labjs-export.mjs — do not edit by hand.
+// Generated from loss-attention2.json by tools/labjs-export.mjs — do not edit by hand.
 // Define study
 const study = lab.util.fromObject({
   "title": "root",
@@ -67,8 +67,8 @@ this.state.upper_loss_color = colors[1].slice(0,1).toUpperCase().concat(colors[1
 this.state.upper_neutral_color = colors[2].slice(0,1).toUpperCase().concat(colors[2].slice(1))
 
 this.state.n_trials = 24 //24
-trials_practice = 26 //6
-trials_mixed_prc = 12 //12
+trials_practice = 6 // web demo (original: 26)
+trials_mixed_prc = 6 // web demo (original: 12)
 
 get_rest_of_1 = function(number) {
   l = String(number).length
@@ -4314,7 +4314,7 @@ this.options.parameters.true_domain = "mixed"
                         ],
                         "sample": {
                           "mode": "draw",
-                          "n": "12"
+                          "n": "${trials_mixed_prc}"
                         },
                         "files": {},
                         "responses": {
@@ -8604,7 +8604,7 @@ if (transmitPlugins.length > 0) {
 })
 
 // Data handling (disabled unless configured in experiments/shared/datasink.js)
-if (window.DataSink) window.DataSink.attach(study, { studyId: "loss-perception-study3" })
+if (window.DataSink) window.DataSink.attach(study, { studyId: "loss-attention2" })
 
 // Let's go!
 study.run()
